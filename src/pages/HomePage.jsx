@@ -4,7 +4,7 @@ import FeedPosts from '../components/FeedPosts/FeedPosts';
 import SuggestedUsers from '../components/suggestedUsers/suggestedUsers';
 
 const HomePage = () => {
-  const [showSuggestedUsers, setShowSuggestedUsers] = useState(true);
+  const [showSuggestedUsers, setShowSuggestedUsers] = useState(false);
 
   return (
     <Container maxW={'container.lg'}>
@@ -16,7 +16,7 @@ const HomePage = () => {
           color="white"
           fontSize="sm"
         >
-          {showSuggestedUsers ? 'Hide Suggested Users' : 'Show Suggested Users'}
+          {showSuggestedUsers ? 'Hide Suggested Users' : 'Show Suggested Users'  }
         </Button>
       </Box>
 

@@ -4,6 +4,7 @@ import AuthPage from './pages/AuthPage/AuthPage';
 import HomePage from './pages/HomePage';
 import PageLayout from './Layouts/PagesLayout/PageLayout'
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import Create from './components/Create/Create';
 
 
 
@@ -14,6 +15,8 @@ function App() {
       <Route path='/auth' element={<AuthPage />} />
       <Route path='/' element={<HomePage />} />
       <Route path='/:username' element={<ProfilePage />} />
+      <Route path='/:post' element={<Create />} />
+
 
     </Routes>
     </PageLayout>

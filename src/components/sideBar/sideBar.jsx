@@ -3,8 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { CreatePostLogo, NotificationsLogo, SearchLogo } from '../../assets/contants';
 import { Avatar } from '@chakra-ui/react';
 import { AiFillHome } from 'react-icons/ai';
-import { BiLogOut } from 'react-icons/bi';  // Corrected import statement
-
+import { BiLogOut } from 'react-icons/bi'; 
 const SideBar = () => {
   const sideBarItems = [
     {
@@ -22,7 +21,8 @@ const SideBar = () => {
     },
     {
       icon: <CreatePostLogo />,
-      text: 'Create',
+      text: 'Create', 
+      link: '/post'
     },
     {
       icon: <Avatar size={'sm'} name="profile" src="/ppt.jpg" />,
@@ -95,6 +95,7 @@ const SideBar = () => {
           label="Logout"
           placement='right'
           ml={1}
+          
           openDelay={300}
           display={{ base: 'block', md: 'none' }}
         >
