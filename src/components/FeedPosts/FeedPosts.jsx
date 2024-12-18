@@ -29,9 +29,9 @@ const FeedPosts = () => {
       {!isLoading && (
         <>
           <FeedPost img='/img1.png' username='jagadeesh' avatar='/img1.png' />
-          <FeedPost img='/img2.jpeg' username='kumar' avatar='/img2.jpeg' />
+          <FeedPost img='/img2.png' username='kumar' avatar='/img2.png' />
           <FeedPost img='/img3.png' username='dhruva' avatar='/img3.png' />
-          <FeedPost img='/img4.jpg' username='arjun' avatar='/img4.jpg' />
+          <FeedPost img='/img4.png' username='arjun' avatar='/img4.png' />
         </>
       )}
     </Container>
